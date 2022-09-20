@@ -1,5 +1,5 @@
-const popup = document.querySelector('.island_popup');
+const text = document.querySelector('.text p');
 
-popup.onclick = () => {
-      popup.classList.toggle('active')
-}
+text.innerHTML = text.innerText.split("").map((char, i) => 
+      `<b style="transform:rotate(${i * 6.8}deg)" > ${char} </b>`
+).join("");
